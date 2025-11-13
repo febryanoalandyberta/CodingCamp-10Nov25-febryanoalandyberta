@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    background-color: #1e293b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cbd5e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #334155;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+/* Form styles */
+form#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#todo-input, #date-input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#todo-input {
+    flex: 2;
+    margin-right: 10px;
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+#todo-input::placeholder {
+    color: #94a3b8;
+}
+
+#date-input {
+    flex: 1;
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+/* Date input arrow coloring fix */
+#date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#add-btn {
+    background-color: #818cf8;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: #6366f1;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#filter-btn, #delete-all-btn {
+    background-color: #334155;
+    border: none;
+    color: #94a3b8;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filter-btn:hover, #delete-all-btn:hover {
+    background-color: #475569;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #cbd5e1;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #475569;
+}
+
+th {
+    font-weight: 700;
+}
+
+.no-task {
+    text-align: center;
+    font-style: italic;
+    color: #94a3b8;
+}
+
+/* Status select */
+.status-select {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+/* Action buttons */
+.action-btn {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #dc2626;
+}
